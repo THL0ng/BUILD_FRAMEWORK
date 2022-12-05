@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BUILD_FRAMEWORK" parallel="false">
+  
+  
+  <test name="RUN ON CHROME">
+    <classes>
+      <class name="com.nopcommerce.login.Login_01_RegisterAndLogin"/>
+    </classes>
+  </test> 
+</suite> 
