@@ -4,7 +4,7 @@
   
   <test name="RUN ON CHROME">
     <classes>
-      <class name="com.nopcommerce.login.Login_01_RegisterAndLogin"/>
+      <class name="com.nopcommerce.login.Login_02_RegisterAndLogin_AbstractPage"/>
     </classes>
   </test> 
 </suite> 
