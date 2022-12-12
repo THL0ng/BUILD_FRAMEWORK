@@ -1,24 +1,16 @@
 package com.nopcommerce.login;
 
 import org.testng.annotations.Test;
-
 import commons.AbstractPage;
-import commons.AbstractTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-public class Login_02_RegisterAndLogin_AbstractPage extends AbstractTest {
+public class Login_02_RegisterAndLogin_AbstractPage_01_Declare  {
 	private WebDriver driver;
-	private Select select;
 	private String email, password;
 	private AbstractPage abstractPage;
 
