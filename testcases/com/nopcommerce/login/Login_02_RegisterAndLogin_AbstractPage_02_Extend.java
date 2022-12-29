@@ -1,9 +1,6 @@
 package com.nopcommerce.login;
-
 import org.testng.annotations.Test;
-import commons.AbstractPage;
 import commons.AbstractPages;
-import commons.AbstractTest;
 import org.testng.annotations.BeforeTest;
 import java.util.Random;
 import org.openqa.selenium.WebDriver;
