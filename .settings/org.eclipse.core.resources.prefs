@@ -5,4 +5,6 @@ encoding//actions/pageObjects/nopCommerce/HomePageObject.java=UTF-8
 encoding//actions/pageObjects/nopCommerce/LoginPageObject.java=UTF-8
 encoding//actions/pageObjects/nopCommerce/RegisterPageObject.java=UTF-8
 encoding//testcases/com/nopcommerce/login/Login_05_RegisterAndLogin_Page_Generator.java=UTF-8
+encoding//testcases/com/nopcommerce/login/Login_06_RegisterAndLogin__Multi_Browser_Parallel.java=UTF-8
+encoding//testcases/com/nopcommerce/login/Login_07_RegisterAndLogin__Factory_Pattern.java=UTF-8
 encoding/<project>=UTF-8

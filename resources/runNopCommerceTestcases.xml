@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="BUILD_FRAMEWORK" parallel="false">
-  
-  
-  <test name="RUN ON CHROME">
-    <classes>
-      <class name="com.nopcommerce.login.Login_05_RegisterAndLogin_Page_Generator"/>
-    </classes>
-  </test> 
+<suite name="BUILD_FRAMEWORK" parallel="false" thread-count = "2"> 
+	
+	
+
+
+
+	<test name="RUN ON CHROME">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.nopcommerce.login.Login_06_RegisterAndLogin__Multi_Browser_Parallel" />
+		</classes>
+	</test>
+	
+	
+	<test name="RUN ON FIREFOX">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.nopcommerce.login.Login_07_RegisterAndLogin__Factory_Pattern" />
+		</classes>
+	</test>
+	
+	
+	<!-- <test name="RUN ON CHROME HEADLESS">
+		<parameter name="browser" value="headless_chrome"></parameter>
+		<classes>
+			<class name="com.nopcommerce.login.Login_05_RegisterAndLogin_Page_Generator" />
+		</classes>
+	</test>
+	
+		
+	<test name="RUN ON FIREFOX HEADLESS">
+		<parameter name="browser" value="headless_firefox"></parameter>
+		<classes>
+			<class name="com.nopcommerce.login.Login_05_RegisterAndLogin_Page_Generator" />
+		</classes>
+	</test> -->
+
+
 </suite> 
