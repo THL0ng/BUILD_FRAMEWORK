@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="BUILD_FRAMEWORK" parallel="false" thread-count = "2"> 
+<suite name="BUILD_FRAMEWORK" parallel="false" thread-count = "2">
+
+<parameter name="browser" value="chrome"></parameter>
+
+<listeners>
+	<listener class-name = "org.uncommons.reportng.HTMLReporter" />
+	<listener class-name = "org.uncommons.reportng.JUnitXMLReporter" />	
+	<listener class-name = "commons.MethodListener" />	
+	<listener class-name = "reportConfig.ExtentTestListener_Version3" />	
+	
+</listeners>
 	
 	
-
-
-
 	<test name="RUN ON CHROME">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.nopcommerce.login.Login_06_RegisterAndLogin__Multi_Browser_Parallel" />
+			
+			<class name="com.nopcommerce.login.Login_14_Sort_Asc_And_Desc" />
 		</classes>
 	</test>
 	
 	
-	<test name="RUN ON FIREFOX">
+	<!-- <test name="RUN ON FIREFOX">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="com.nopcommerce.login.Login_07_RegisterAndLogin__Factory_Pattern" />
+			<class name="com.nopcommerce.login.Login_11_RegisterAndLogin_Assert_Verify_Report" />
 		</classes>
-	</test>
+	</test> -->
 	
 	
 	<!-- <test name="RUN ON CHROME HEADLESS">

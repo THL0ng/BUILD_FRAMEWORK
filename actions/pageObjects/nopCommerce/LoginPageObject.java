@@ -10,13 +10,13 @@ public class LoginPageObject extends AbstractPages {
 	private WebDriver driver;
 
 	public void inputToEmailTextbox(String emailValue) {	
-		waitToElementDisplayed(driver, LoginPageUI.EMAIL_TEXTBOX);
-		sendKeyToElement(driver, LoginPageUI.EMAIL_TEXTBOX, emailValue);			
+		waitToElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
+		sendkeyToElement(driver, LoginPageUI.EMAIL_TEXTBOX, emailValue);			
 	}
 
 	public void inputToPasswordTextBox(String passwordValue) {
-		waitToElementDisplayed(driver, LoginPageUI.PASSWORD_TEXTBOX);
-		sendKeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, passwordValue);				
+		waitToElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
+		sendkeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, passwordValue);				
 	}
 
 	public HomePageObject clickToLoginButton() {

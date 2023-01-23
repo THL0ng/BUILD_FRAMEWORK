@@ -29,7 +29,7 @@ public class Login_03_RegisterAndLogin_Page_Object extends AbstractPages {
 		System.setProperty("webdriver.chrome.driver", projectPath + "\\libraries\\chromedriver.exe");
 
 		driver = new ChromeDriver();
-		openURL(driver, "https://demo.nopcommerce.com/");
+		openUrl(driver, "https://demo.nopcommerce.com/");
 
 		// GENERATE RANDOM
 		email = "corona" + randowmNumber() + "@hotmail.com";

@@ -16,13 +16,13 @@ public class RegisterPageObject extends AbstractPages {
 	}
 
 	public void inputToFirstNameTextbox(String firstNameValue) {
-		waitToElementDisplayed(driver, RegisterPageUI.FIRST_NAME_TEXTBOX);
-		sendKeyToElement(driver, RegisterPageUI.FIRST_NAME_TEXTBOX, firstNameValue);
+		waitToElementVisible(driver, RegisterPageUI.FIRST_NAME_TEXTBOX);
+		sendkeyToElement(driver, RegisterPageUI.FIRST_NAME_TEXTBOX, firstNameValue);
 	}
 
 	public void inputToLastNameTextbox(String lastNameValue) {
-		waitToElementDisplayed(driver, RegisterPageUI.LAST_NAME_TEXTBOX);
-		sendKeyToElement(driver, RegisterPageUI.LAST_NAME_TEXTBOX, lastNameValue);
+		waitToElementVisible(driver, RegisterPageUI.LAST_NAME_TEXTBOX);
+		sendkeyToElement(driver, RegisterPageUI.LAST_NAME_TEXTBOX, lastNameValue);
 
 	}
 
@@ -42,23 +42,23 @@ public class RegisterPageObject extends AbstractPages {
 	}
 
 	public void inputToEmailTextbox(String emailValue) {
-		waitToElementDisplayed(driver, RegisterPageUI.EMAIL_TEXTBOX);
-		sendKeyToElement(driver, RegisterPageUI.EMAIL_TEXTBOX, emailValue);		
+		waitToElementVisible(driver, RegisterPageUI.EMAIL_TEXTBOX);
+		sendkeyToElement(driver, RegisterPageUI.EMAIL_TEXTBOX, emailValue);		
 	}
 
 	public void inputToCompanyextbox(String companyValue) {
-		waitToElementDisplayed(driver, RegisterPageUI.COMPANY_TEXTBOX);
-		sendKeyToElement(driver, RegisterPageUI.COMPANY_TEXTBOX, companyValue);		
+		waitToElementVisible(driver, RegisterPageUI.COMPANY_TEXTBOX);
+		sendkeyToElement(driver, RegisterPageUI.COMPANY_TEXTBOX, companyValue);		
 	}
 
 	public void inputToPasswordTextbox(String passwordValue) {
-		waitToElementDisplayed(driver, RegisterPageUI.PASSWORD_TEXTBOX);
-		sendKeyToElement(driver, RegisterPageUI.PASSWORD_TEXTBOX, passwordValue);				
+		waitToElementVisible(driver, RegisterPageUI.PASSWORD_TEXTBOX);
+		sendkeyToElement(driver, RegisterPageUI.PASSWORD_TEXTBOX, passwordValue);				
 	}
 
 	public void inputToConfirmPasswordTextbox(String confirmPasswordValue) {
-		waitToElementDisplayed(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX);
-		sendKeyToElement(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX, confirmPasswordValue);	
+		waitToElementVisible(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX);
+		sendkeyToElement(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX, confirmPasswordValue);	
 		
 	}
 
@@ -67,9 +67,9 @@ public class RegisterPageObject extends AbstractPages {
 		clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);		
 	}
 
-	public Object getRegisterSuccessMessage() {
+	public String getRegisterSuccessMessage() {
 		waitToElementClickable(driver, RegisterPageUI.REGISTER_SUCCESS_TEXT);
-		return getTextElement(driver, RegisterPageUI.REGISTER_SUCCESS_TEXT);
+		return getTextlement(driver, RegisterPageUI.REGISTER_SUCCESS_TEXT);
 	}
 
 	public HomePageObject clickToLogoutLink() {
@@ -82,5 +82,28 @@ public class RegisterPageObject extends AbstractPages {
 	public RegisterPageObject (WebDriver _driver ) {
 			driver = _driver;
 		}
+
+	public boolean isFirstnameTextboxDisplayed() {
+		waitToElementVisible(driver, "//input[@id='FirstName']");
+		return isElementDisplayed(driver,"//input[@id='FirstName']");
+		
+	}
+
+	public boolean isRequestVerifyTokenTextboxUndisplayed() {
+		waitToElementInvisible(driver, "//input[@name='__RequestVerificationToken']");
+		return isElementUndisplayed(driver,"//input[@name='__RequestVerificationToken']");
+	}
+	
+	public boolean isRequestVerifyTokenTextboxdisplayed() {
+		return isElementDisplayed(driver,"//input[@name='__RequestVerificationToken']");
+	}
+
+	public boolean isRegisterButtonUndisplayed() {
+		waitToElementInvisible(driver, "//input[@class='button-1 register-button']");
+		return isElementUndisplayed(driver, "//input[@name='__RequestVerificationToken']");
+	}
+	
+	 
+	
 
 }
