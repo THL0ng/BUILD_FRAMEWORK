@@ -16,7 +16,7 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			
-			<class name="com.nopcommerce.login.Login_14_Sort_Asc_And_Desc" />
+			<class name="com.nopcommerce.login.Login_15_Data_Faker" />
 		</classes>
 	</test>
 	

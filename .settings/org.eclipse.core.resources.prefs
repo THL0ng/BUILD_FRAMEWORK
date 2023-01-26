@@ -15,4 +15,6 @@ encoding//testcases/com/nopcommerce/login/Login_11_RegisterAndLogin_Assert_Verif
 encoding//testcases/com/nopcommerce/login/Login_12_Register_ShareClassState.java=UTF-8
 encoding//testcases/com/nopcommerce/login/Login_13_RegisterAndLogin_Dynamic_Element_Component.java=UTF-8
 encoding//testcases/com/nopcommerce/login/Login_14_Sort_Asc_And_Desc.java=UTF-8
+encoding//testcases/com/nopcommerce/login/Login_15_Data_Faker.java=UTF-8
+encoding//testcases/com/nopcommerce/login/Login_16_Data_Java_Class.java=UTF-8
 encoding/<project>=UTF-8
